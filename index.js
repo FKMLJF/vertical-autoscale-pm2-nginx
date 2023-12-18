@@ -6,6 +6,12 @@ const port = process.env.PORT || 3500; // Get environment variable PORT from pro
 
 var httpServer = createServer(app);
 
+app.get('/', (req, res) => {
+  setTimeout(() => {
+  res.send( Math.floor(Math.random() * 2)
+}, "1000");
+})
+
 httpServer.listen(port, () => {
   console.log("Running HTTP on ", port);
 });
