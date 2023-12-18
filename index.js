@@ -8,7 +8,7 @@ var httpServer = createServer(app);
 
 app.get('/', (req, res) => {
   setTimeout(() => {
-  res.send( Math.floor(Math.random() * 2)
+  res.send( Math.floor(Math.random() * 2));
 }, "1000");
 })
 
